@@ -9,3 +9,5 @@ export default function Loading() {
         </div>
     )
 }
+
+// 2:09
