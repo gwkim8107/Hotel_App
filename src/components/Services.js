@@ -7,39 +7,42 @@ export default class Services extends Component {
         services: [
             {
                 icon: <FaCocktail/>,
-                title: "free cocktails",
-                info: "abde"
+                title: "Free cocktails",
+                info: "DevTools failed to load SourceMap:"
             },
             {
                 icon: <FaHiking/>,
                 title: "Endless Hiking",
-                info: ""
+                info: "DevTools failed to load SourceME"
             },
             {
                 icon: <FaShuttleVan/>,
-                title: "free Shuttle",
-                info: ""
+                title: "Free Shuttle",
+                info: "DevTools failed to load SourceME"
+
             },
             {
                 icon: <FaBeer/>,
                 title: "Strongest Beer",
-                info: ""
+                info: "DevTools failed to load SourceME"
             }
         ]
     };
     render() {
         return (
             <div>
+                <section className="services">
                 <Title title="services"></Title>
-                <div className="services-center">
-                    {this.state.services.map( (item, index) => {
-                        return <article key={index} className="service">
-                            <span>{item.icon}</span>
-                            <h6>{item.title}</h6>
-                            <p>{item.info}</p>
-                            </article>
-                    })}
-                </div>
+                    <div className="services-center">
+                        {this.state.services.map( (item, index) => {
+                            return <article key={index} className="service">
+                                <span>{item.icon}</span>
+                                <h6>{item.title}</h6>
+                                <p>{item.info}</p>
+                                </article>
+                        })}
+                    </div>
+                </section>
             </div>
         )
     }
